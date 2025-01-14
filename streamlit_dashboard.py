@@ -108,10 +108,11 @@ with col2:
     fig = px.pie(data_frame=cat_states_agg, names='category', values='export', 
              color='category', color_discrete_sequence=px.colors.qualitative.Prism,               
              hole=0.4,
-             height=600)
+             height=600,
+             width=600)
 
     # Set the legend title
     fig.update_layout(legend_title=dict(text="Export Categories"))
 
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=False)
 
