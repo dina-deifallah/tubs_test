@@ -108,7 +108,7 @@ with col2:
     fig = px.pie(data_frame=cat_states_agg, names='category', values='export', 
              color='category', color_discrete_sequence=px.colors.qualitative.Prism,               
              hole=0.4,
-             height=500)
+             height=500, width=400)
 
     # Set the legend title
     fig.update_layout(legend_title=dict(text="Export Categories"))
