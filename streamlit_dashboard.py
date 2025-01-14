@@ -96,7 +96,7 @@ with col1:
                color_continuous_scale=px.colors.sequential.algae,
                color="total",
                labels={'code': 'State', 'total':'Total Exports in Million USD'},
-               height=600)
+               height=500)
     
     st.plotly_chart(fig, use_container_width=True)
 
@@ -108,8 +108,7 @@ with col2:
     fig = px.pie(data_frame=cat_states_agg, names='category', values='export', 
              color='category', color_discrete_sequence=px.colors.qualitative.Prism,               
              hole=0.4,
-             height=600,
-             width=600)
+             height=500)
 
     # Set the legend title
     fig.update_layout(legend_title=dict(text="Export Categories"))
